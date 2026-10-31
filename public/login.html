@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acesse o sistema Contrata de gestão de contratos.">
+  <title>Entrar · Contrata</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-page">
+  <div class="login-shell">
+    <section class="login-hero">
+      <div class="login-hero-glow"></div>
+
+      <a class="brand brand-light" href="login.html" aria-label="Contrata">
+        <span class="brand-symbol">C</span>
+        <span class="brand-text">
+          <strong>Contrata</strong>
+          <small>Gestão de contratos</small>
+        </span>
+      </a>
+
+      <div class="hero-copy">
+        <span class="hero-pill"><span class="status-dot"></span> Ambiente de demonstração</span>
+        <h1>Contratos sob controle,<br>do início ao fim.</h1>
+        <p>
+          Centralize fornecedores, valores, vencimentos e documentos em um único
+          lugar. Edite como em uma planilha, sem perder a governança.
+        </p>
+      </div>
+
+      <ul class="hero-features">
+        <li>
+          <span class="hero-feature-icon">✓</span>
+          <div><strong>Base viva</strong><span>Edição inline com salvamento automático.</span></div>
+        </li>
+        <li>
+          <span class="hero-feature-icon">✓</span>
+          <div><strong>Alertas de vencimento</strong><span>Visão clara de contratos a vencer e vencidos.</span></div>
+        </li>
+        <li>
+          <span class="hero-feature-icon">✓</span>
+          <div><strong>Documentos vinculados</strong><span>Arquivos organizados por contrato e categoria.</span></div>
+        </li>
+      </ul>
+
+      <div class="hero-card" aria-hidden="true">
+        <div class="hero-card-top">
+          <span>CT-2026-002</span>
+          <span class="mini-badge">Vigente</span>
+        </div>
+        <strong>Migração de workloads para nuvem</strong>
+        <div class="hero-card-row">
+          <span>Nexa Tecnologia</span>
+          <span>R$ 480.000,00</span>
+        </div>
+        <div class="hero-card-bar"><span></span></div>
+      </div>
+
+      <p class="login-hero-foot">Dados fictícios para fins de demonstração.</p>
+    </section>
+
+    <section class="login-main">
+      <div class="login-card">
+        <header class="login-card-head">
+          <span class="eyebrow">Acesso restrito</span>
+          <h2>Entrar no sistema</h2>
+          <p>Informe suas credenciais de administrador para continuar.</p>
+        </header>
+
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="usuario">Usuário</label>
+            <div class="input-wrap">
+              <span class="input-icon" data-icon="building"></span>
+              <input type="text" id="usuario" name="usuario" autocomplete="username" placeholder="Seu usuário" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="senha">Senha</label>
+            <div class="input-wrap">
+              <span class="input-icon" data-icon="shield"></span>
+              <input type="password" id="senha" name="senha" autocomplete="current-password" placeholder="Sua senha" required>
+              <button type="button" class="password-toggle" id="toggle-password" aria-label="Mostrar senha">
+                <span data-icon="eye"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-error" id="login-error" role="alert" hidden></div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-login">
+            <span class="btn-label">Entrar no sistema</span>
+            <span class="spinner" hidden></span>
+          </button>
+        </form>
+
+        <p class="login-hint">
+          Ambiente de desenvolvimento. As credenciais de teste estão descritas no
+          <strong>README.md</strong> do projeto.
+        </p>
+      </div>
+
+      <footer class="login-foot">
+        <span>© 2026 Contrata</span>
+        <span>HTML · CSS · JavaScript</span>
+      </footer>
+    </section>
+  </div>
+
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>
